@@ -21,7 +21,9 @@ namespace RockPaperScissors
         public void Play()
         {
             string userChoice;
-
+            ties = 0;
+            loses = 0;
+            wins = 0;
             userChoice = GetUserChoice();
 
             while (userChoice != "Q")
@@ -38,6 +40,9 @@ namespace RockPaperScissors
         public void PlayComputer()
         {
             string length = GetNumberOfPlays();
+            ties = 0;
+            loses = 0;
+            wins = 0;
 
             for (int i = 1; i <= int.Parse(length); i++)
             {
